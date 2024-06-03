@@ -1,0 +1,46 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+<div class="container" style="margin-top: 120px;">
+    <form class="frm" method="post" action="/criarFarm">
+        <h2 class="car">Cadastro de Plantações</h2>
+        <div class="form-group">
+            <label class="n">Número de Plantas</label><br>
+            <input class="numeroPlantas" type="number" name="num_plantas">
+        </div>
+        <div class="form-group">
+            <label class="d">Data da Análise</label><br>
+            <input class="dataAnalise" type="date" name="dt_analise">
+        </div>
+        <div class="form-group">
+            <label class="l">Localização</label><br>
+            <input class="localizacao" type="text" name="localizacao">
+        </div>
+        <div class="form-group">
+            <label class="t">Tamanho</label><br>
+            <input class="tamanho" type="text" name="tamanho">
+        </div>
+        <div class="form-group">
+            <label class="ti">Tipo de Pupunheira</label><br>
+            <select class="pupunheira" name="tipo_pupunheira">
+                <option value="" selected disabled></option>
+                <option value="Comum">Pupunha Comum</option>
+                <option value="Brava">Pupunha Brava</option>
+                <option value="Sem_Espinho">Pupunha Sem Espinho</option>
+                <option value="Gigante">Pupunha Gigante</option>
+                <option value="de_Palmito">Pupunha de Palmito</option>
+            </select>
+        </div>
+        <!-- <div class="form-group">
+            <br><label class="i">Imagem da Antracnose</label><br>
+            <input class="imagem" type="file" name="imagem">
+        </div> -->
+            <br><button class="bt2">Cadastrar</button><br>
+    </form>
+</div>
+<div class="subcontaine">
+
+</div>
+
+
+<%- include ('partials/footer.ejs') %>

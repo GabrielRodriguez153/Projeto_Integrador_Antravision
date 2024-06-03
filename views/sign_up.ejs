@@ -1,0 +1,21 @@
+<%- include ('partials/header.ejs') %>
+<div class="container3">
+    <div class="cont2">
+    <img class="mans" src="imgs/logo2.svg">
+    <img class="man" src="imgs/sublog2.svg">
+    <br>
+    <br>
+    </div>
+    <a href="/" class="back"><i class="fa-solid fa-caret-left fa-xl"></i></a>
+    <form class="signu" method="POST" action="/criarUser">
+        <h3 class="cad">Bem Vindo!<br> Crie sua Conta Agora!</h3>
+        <input type="text" name="nome" class="name" id="nome" placeholder="Nome" required>
+        <br>
+        <input type="email" name="email" class="email" placeholder="Email" required>
+        <br>
+        <input type="password" name="senha" class="pass" placeholder="Senha" required>
+        <input type="submit" value="CADASTRAR" class="btn_1">
+    </form>
+</div>
+
+<%- include ('partials/footer.ejs') %>

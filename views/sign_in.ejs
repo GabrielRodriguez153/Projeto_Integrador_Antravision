@@ -1,0 +1,20 @@
+<%- include ('partials/header.ejs') %>
+    <div class="container2">
+        <div class="cont">
+            <img class="mans" src="imgs/logo2.svg">
+            <img class="man" src="imgs/sublog2.svg">
+        <br>
+        <br>
+        </div>
+        <a href="/" class="bac2"><i class="fa-solid fa-caret-left fa-xl"></i></a>
+        <form class="signi" method="POST" action="/autenticar">
+            <h3 class="cad2">Olá!<br> Bem Vindo de Volta!</h3>
+            <input type="email" name="email" class="email2" placeholder="Email" required>
+            <br>
+            <input type="password" name="senha" class="pass2" placeholder="Senha" required>
+            <br>
+            <br>
+            <input type="submit" value="LOGAR" class="btn_2">
+        </form>
+    </div>
+<%- include ('partials/footer.ejs') %>
