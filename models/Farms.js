@@ -6,7 +6,6 @@ const Farms = new mongoose.Schema({
     localizacao : String,
     tamanho : Number,
     tipo_pupunheira : String,
-    imagem : String
 })
 
 export default Farms

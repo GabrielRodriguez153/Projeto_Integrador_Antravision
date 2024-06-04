@@ -2,7 +2,7 @@ import express from 'express'
 import bcrypt from "bcrypt"
 const router = express.Router()
 import UserService from '../services/UserService.js'
-
+import OtherService from '../services/OtherService.js'
 router.get("/sign_in",(req,res) =>{
     res.render("sign_in", {
         loggedOut: true,
@@ -17,10 +17,29 @@ router.get("/sign_up",(req,res) =>{
     })
 })
 
-router.get("/sair", (req,res) => {
-    req.session.user = undefined
-    res.redirect("/")
+router.post("/logout",(req,res) => {
+    const id = req.session.user.id
+    console.log(id)
+    UserService.Delete(id)
+    res.redirect("/sign_up")
 })
+
+router.post("/alterar",async (req,res) => {
+    await UserService.Update(
+        req.session.user.id,
+        req.body.nome,  
+        req.body.sobrenome,
+        req.body.email,
+        req.body.telefone,
+        req.body.cargo
+    )
+    console.log(req.body.email)
+    const perfil = await OtherService.perfil(req.session.user.id)
+    res.render("perfil", {
+        perfil: perfil
+    })
+})
+
 
 router.post("/autenticar", (req, res) => {
     const email = req.body.email
@@ -30,7 +49,7 @@ router.post("/autenticar", (req, res) => {
             const correct = bcrypt.compareSync(password, user.senha)
             if(correct){
                 req.session.user = {
-                    id : user._id,
+                    id : user.id,
                     email : user.email
                 }
 
