@@ -431,8 +431,9 @@ body{
 /* TELA DE DADOS */
 .frm{
     background-color: #D4FFD0;
-    border-radius: 20px;
-    width: 780px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 828px;
     height: 575px;
     position: relative;
     left: -6rem;
@@ -440,24 +441,42 @@ body{
     font-family: 'Montserrat',sans-serif;
 }
 
+.imgd{
+    width: 652px;
+    position: absolute;
+    left: 53.2rem;
+    top: 7.2rem;
+}
+
+.im{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 .subcontaine{
     background-color: #D4FFD0;
-    border-radius: 20px;
-    width: 1300px;
+    width: 1475px;
     height: 275px;
     left: 1.5rem;
     position: absolute;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .car{
     color: #465741;
     font-family: 'Montserrat',sans-serif;
-    font-size: 35px;
+    font-size: 38px;
     padding-top: 2rem;
-    padding-left: 2rem;
+    padding-left: 7.5rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
-    font-weight: 600;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+th{
+    padding-left: 9rem;
 }
 
 .numeroPlantas,.dataAnalise,.localizacao,.tamanho,.tipoPupunheira,label{
@@ -472,7 +491,8 @@ body{
     font-size: 1rem;
     padding-left: 0.5rem;
     border-radius: 0.2rem;
-    border: 1px solid #465741;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
 }
 
 .dataAnalise{
@@ -483,9 +503,10 @@ body{
     padding-left: .5rem;
     position: relative;
     padding-right: .5rem;
-    left: 22.5rem;
+    left: 25.5rem;
     top: -4.51rem;
-    border: 1px solid #465741;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 0.2rem;
 }
 
@@ -503,7 +524,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .d{
     position: relative;
-    left: 22.5rem; 
+    left: 25.5rem; 
     top: -5rem;
 }
 
@@ -512,8 +533,9 @@ input[type="number"]::-webkit-outer-spin-button {
     left: .1rem;
     top: -3rem;
     height: 3rem;
-    width: 707px;
-    border: 1px solid #465741;
+    width: 752px;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 0.2rem;
     font-size: 1rem;
     padding-left: .5rem;
@@ -531,8 +553,9 @@ input[type="number"]::-webkit-outer-spin-button {
     left: .1rem;
     top: -1.5rem;
     height: 3rem;
-    width: 707px;
-    border: 1px solid #465741;
+    width: 752px;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 0.2rem;
     font-size: 1rem;
     padding-left: .5rem;
@@ -556,8 +579,9 @@ input[type="number"]::-webkit-outer-spin-button {
     left: 2.26rem;
     top: -.2rem;
     height: 3rem;
-    width: 707.5px;
-    border: 1px solid #465741;
+    width: 752.5px;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 0.2rem;
     font-size: 1rem;
     padding-left: .5rem;
@@ -565,7 +589,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .bt2{
-    width: 710px;
+    width: 755px;
     position: relative;
     left: 2rem;
     border: none;
@@ -597,7 +621,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .imagem{
     width: 216px;
     height: 218px;
-    background-color: rgb(193, 191, 191);
+    background-color: #ededed;
     position: absolute;
     margin-top: 1.5rem;
     margin-left: 2rem;
@@ -740,7 +764,8 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-left: 2.2rem;
     outline: none;
     padding-left: 0.5rem;
-    border: 1px solid #465741;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 5px;
   }
 
@@ -753,7 +778,8 @@ input[type="number"]::-webkit-outer-spin-button {
     top: -2.5rem;
     outline: none;
     padding-left: 0.5rem;
-    border: 1px solid #465741;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 5px;
   }
 
@@ -766,7 +792,8 @@ input[type="number"]::-webkit-outer-spin-button {
     top: .5rem;
     outline: none;
     padding-left: 0.5rem;
-    border: 1px solid #465741;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 5px;
   }
 
@@ -776,10 +803,11 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 40px;
     position: relative;
     left: 36.2rem;
-    top: -1.9rem;
+    top: -2rem;
     outline: none;
     padding-left: 0.5rem;
-    border: 1px solid #465741;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 5px;
   }
 
@@ -792,7 +820,8 @@ input[type="number"]::-webkit-outer-spin-button {
     top: 1.4rem;
     outline: none;
     padding-left: 0.5rem;
-    border: 1px solid #465741;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 5px;
   }
 
@@ -802,9 +831,10 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 40px;
     position: relative;
     left: 36.2rem;
-    top: -1rem;
+    top: -1.1rem;
     outline: none;
     padding-left: 0.5rem;
-    border: 1px solid #465741;
+    border: 2px solid #d6d3d3;
+    background-color: #ededed;
     border-radius: 5px;
   }
