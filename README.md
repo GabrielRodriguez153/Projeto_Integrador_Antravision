@@ -10,8 +10,11 @@ O Antravision é um sistema de detecção de antracnose em pupunheiras com uma a
 - Ana Luisa Lima
 
 ## Screenshots
+- Tela Principal
 ![Antravision](imagem.png)
 
+- Tela do Mapa
 ![Antravision](imagem(1).png)
 
+- Tela do Perfil do Usuário
 ![Antravision](imagem(2).png)
