@@ -15,6 +15,10 @@ class FarmService{
         })
         newFarm.save()
     }
+    SelectAll() {
+        const fazendas = Farm.find()
+        return fazendas
+    }
 }
 
 export default new FarmService()

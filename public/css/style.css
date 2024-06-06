@@ -8,6 +8,36 @@ body{
     display: none;
 }
 
+.ft{
+    width: 1782px;
+    height: 100px;
+    background-color: #B6C4B6;
+    position: absolute;
+    top: 112rem;
+    left: -15.4rem;
+}
+
+.h-100 {
+    height: 62% !important;
+}
+
+.card-body {
+    color: #D4FFD0;
+    background-color: #465741;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+}
+
+
+.us{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2.7rem;
+    margin-right: 3.2rem;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
 /* CSS DA TELA DE ABERTUTRA */
 .cotainer{
     width: 692px;
@@ -373,7 +403,7 @@ body{
 
 .sub-container2{
     width: 1380px;
-    height: 550px;
+    height: 760px;
     background-color: #D4FFD0;
     top: 63rem;
     left: 4.55rem;
@@ -384,15 +414,15 @@ body{
 .prop{
     color: #465741;
     font-size: 50px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Montserrat',sans-serif;
     font-weight: 700;
     padding-top: 30px;
-    padding-left: 2rem;
+    padding-left: 2.4rem;
 }
 .ant{
     color: #465741;
     font-size: 50px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Montserrat',sans-serif;
     font-weight: 700;
     padding-top: 30px;
     padding-left: 25px;
@@ -404,7 +434,7 @@ body{
     padding-right: 35rem;
     padding-top: 9.6px;
     font-size: 16.2px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
@@ -468,15 +498,27 @@ body{
     font-family: 'Montserrat',sans-serif;
     font-size: 38px;
     padding-top: 2rem;
-    padding-left: 7.5rem;
+    padding-left: 7.2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-th{
-    padding-left: 9rem;
+th {
+    padding-left: 6.5rem;
+    color: #465741;
+}
+
+.card-text {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.card-body1 {
+    background-color: #b5d6b6;
+    padding: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .numeroPlantas,.dataAnalise,.localizacao,.tamanho,.tipoPupunheira,label{
@@ -508,6 +550,16 @@ th{
     border: 2px solid #d6d3d3;
     background-color: #ededed;
     border-radius: 0.2rem;
+}
+
+.table-t {
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: #465741;
 }
 
 .n{

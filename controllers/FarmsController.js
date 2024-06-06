@@ -2,8 +2,12 @@ import express from 'express'
 const router = express.Router()
 import FarmsService from '../services/FarmsService.js'
 
-router.get("/dados",function(req,res){
-    res.render("dados")
+router.get("/dados",(req,res) => {
+    FarmsService.SelectAll().then((fazendas) => {
+        res.render("dados", {
+            fazendas : fazendas
+        })
+    })
 })
 
 let dados = []

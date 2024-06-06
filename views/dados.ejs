@@ -40,9 +40,9 @@
 <div class="subcontaine">
     <div class="card">
         <div class="card-header" style="background-color: #D4FFD0;">
-            <h1>Plantações</h1>
+            <h1 class="table-t">Plantações</h1>
         </div>
-        <div class="card-body" style="background-color: #D4FFD0;">
+        <div class="card-body1">
             <table>
                 <thead>
                     <tr>
@@ -55,12 +55,35 @@
                     </tr>
                 </thead>
                 <tbody>
-                   
+                    <% fazendas.forEach(faz=> { %>
+                        <tr>
+                            <td>
+                                <%= faz.num_plantas %>
+                            </td>
+                            <td>
+                                <%= faz.dt_analise %>
+                            </td>
+                            <td>
+                                <%= faz.localizacao %>
+                            </td>
+                            <td>
+                                <%= faz.tamanho %>
+                            </td>
+                            <td>
+                                <%= faz.tipo_pupunheira %>
+                            </td>
+                            <td>
+                                <a style="color: rgb(145, 198, 145);" href="#">Editar</a>
+                            </td>
+                            <td>
+                                <a style="color: rgb(229, 155, 155);" href="#" onclick="return confirm('Confirma a Exclusão do Registro?')">Excluir</a>
+                            </td>
+                        </tr>
+                        <% }) %>
                 </tbody>
             </table>
         </div>
     </div>
 </div>
-
 
 <%- include ('partials/footer.ejs') %>
