@@ -60,7 +60,7 @@
                             <td>
                                 <%= faz.num_plantas %>
                             </td>
-                            <td>
+                            <td class="data-analise">
                                 <%= faz.dt_analise %>
                             </td>
                             <td>
@@ -72,11 +72,9 @@
                             <td>
                                 <%= faz.tipo_pupunheira %>
                             </td>
-                            <td>
-                                <a style="color: rgb(145, 198, 145);" href="#">Editar</a>
-                            </td>
-                            <td>
-                                <a style="color: rgb(229, 155, 155);" href="#" onclick="return confirm('Confirma a Exclusão do Registro?')">Excluir</a>
+                            <td colspan="2">
+                                <a style="color: rgb(77, 159, 77);margin-right: 2rem;" href="/editFarm/<%= faz._id %>"><i class="fa-solid fa-pencil"></i></a>
+                                <a style="color: rgb(189, 75, 75);" href="/deletarFarm/<%= faz._id %>" onclick="return confirm('Confirma a Exclusão do Registro?')"><i class="fa-solid fa-trash"></i></a>
                             </td>
                         </tr>
                         <% }) %>
@@ -86,4 +84,21 @@
     </div>
 </div>
 
+<script>
+    // Selecionar todas as células com a classe 'data-analise'
+    const celulas = document.querySelectorAll('.data-analise');
+
+    // Iterar sobre cada célula e formatar a data
+    celulas.forEach(cell => {
+        const dateString = cell.textContent;
+        const dateObject = new Date(dateString);
+        const formattedDate = dateObject.toLocaleDateString('pt-BR', {
+            weekday: 'short', 
+            year: 'numeric', 
+            month: 'short', 
+            day: 'numeric', 
+        });
+        cell.textContent = formattedDate;
+    });
+</script>
 <%- include ('partials/footer.ejs') %>

@@ -10,20 +10,43 @@ router.get("/dados",(req,res) => {
     })
 })
 
-let dados = []
-
-
-router.post("/criarFarm", (req,res) => {
-    const novaFarm = {
-        num_plantas: req.body.num_plantas,
-        dt_analise: req.body.dt_analise,
-        localizacao:req.body.localizacao,
-        tamanho: req.body.tamanho,
-        tipo_pupunheira:req.body.tipo_pupunheira,
-    }
-    dados.push(novaFarm)
+router.get("/deletarFarm/:id", (req,res) => {
+    const id = req.params.id
+    FarmsService.Delete(id)
+    res.redirect("/dados")
 })
 
+router.get("/editFarm/:id", (req,res) =>{
+    const id = req.params.id
+    FarmsService.SelectOne(id).then((fazenda) => {
+        res.render("dados_edit", {
+            fazenda : fazenda
+        })
+    })
+})
+
+router.post("/criarFarm", (req,res) => {
+    FarmsService.Create(
+        req.body.num_plantas,
+        req.body.dt_analise,
+        req.body.localizacao,
+        req.body.tamanho,
+        req.body.tipo_pupunheira
+    )
+    res.redirect("/dados")
+})
+
+router.post("/atualizarFarm/:id", (req,res) => {
+    FarmsService.Update(
+        req.body.id,
+        req.body.num_plantas,
+        req.body.dt_analise,
+        req.body.localizacao,
+        req.body.tamanho,
+        req.body.tipo_pupunheira
+    )
+    res.redirect("/dados")
+})
 
 
 export default router
