@@ -85,20 +85,22 @@
 </div>
 
 <script>
-    // Selecionar todas as células com a classe 'data-analise'
     const celulas = document.querySelectorAll('.data-analise');
 
-    // Iterar sobre cada célula e formatar a data
     celulas.forEach(cell => {
+        
         const dateString = cell.textContent;
+
         const dateObject = new Date(dateString);
-        const formattedDate = dateObject.toLocaleDateString('pt-BR', {
-            weekday: 'short', 
-            year: 'numeric', 
-            month: 'short', 
-            day: 'numeric', 
-        });
-        cell.textContent = formattedDate;
+
+        if (!isNaN(dateObject.getTime())) {
+            const formattedDate = dateObject.toLocaleDateString('pt-BR');
+
+            cell.textContent = formattedDate;
+        } else {
+
+            console.error('Data inválida:', dateString);
+        }
     });
 </script>
 <%- include ('partials/footer.ejs') %>

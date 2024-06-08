@@ -18,9 +18,9 @@ router.get("/deletarFarm/:id", (req,res) => {
 
 router.get("/editFarm/:id", (req,res) =>{
     const id = req.params.id
-    FarmsService.SelectOne(id).then((fazenda) => {
+    FarmsService.SelectOne(id).then((fazendas) => {
         res.render("dados_edit", {
-            fazenda : fazenda
+            fazendas : fazendas
         })
     })
 })

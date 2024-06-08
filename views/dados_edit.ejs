@@ -13,8 +13,12 @@
                     <input class="numeroPlantas" type="number" name="num_plantas" value="<%= fazenda.num_plantas %>">
                 </div>
                 <div class="form-group">
+                    <%
+                        var isoDate = fazenda.dt_analise ;
+                        var dateValue = new Date(isoDate).toISOString().split('T')[0];
+                    %>
                     <label class="d">Data da Análise</label><br>
-                    <input class="dataAnalise" type="date" name="dt_analise" value="<%= fazenda.dt_analise %>">
+                    <input class="dataAnalise" type="date" name="dt_analise" value="<%= dateValue %>">
                 </div>
                 <div class="form-group">
                     <label class="l">Localização</label><br>
@@ -42,5 +46,8 @@
         </div>
     </div>
 </div>
+<script>
+
+</script>
 
 <%- include ('partials/footer.ejs') %>
