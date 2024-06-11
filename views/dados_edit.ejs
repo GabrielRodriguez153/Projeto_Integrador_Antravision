@@ -6,40 +6,39 @@
 </div>
 <div class="container" style="margin-top: 120px;">
         <div class="card-body">
-            <form class="frm" method="post" action="/atualizarFarm/<%= fazenda._id %>">
+            <form class="frm" method="post" action="/atualizarFarm/<%= fazendas._id %>">
                 <h2 class="car2">Alterar Plantações</h2>
                 <div class="form-group">
                     <label class="n">Número de Plantas</label><br>
-                    <input class="numeroPlantas" type="number" name="num_plantas" value="<%= fazenda.num_plantas %>">
+                    <input class="numeroPlantas" type="number" name="num_plantas" value="<%= fazendas.num_plantas %>">
                 </div>
                 <div class="form-group">
                     <%
-                        var isoDate = fazenda.dt_analise ;
-                        var dateValue = new Date(isoDate).toISOString().split('T')[0];
+                    var dateString = fazendas.dt_analise;
                     %>
                     <label class="d">Data da Análise</label><br>
-                    <input class="dataAnalise" type="date" name="dt_analise" value="<%= dateValue %>">
+                    <input class="dataAnalise" type="date" name="dt_analise" value="<%= dateString %>">
                 </div>
                 <div class="form-group">
                     <label class="l">Localização</label><br>
-                    <input class="localizacao" type="text" name="localizacao" value="<%= fazenda.localizacao %>">
+                    <input class="localizacao" type="text" name="localizacao" value="<%= fazendas.localizacao %>">
                 </div>
                 <div class="form-group">
                     <label class="t">Tamanho</label><br>
-                    <input class="tamanho" type="text" name="tamanho" value="<%= fazenda.tamanho %>">
+                    <input class="tamanho" type="text" name="tamanho" value="<%= fazendas.tamanho %>">
                 </div>
                 <div class="form-group">
                     <label class="ti">Tipo de Pupunheira</label><br>
-                    <select class="pupunheira" name="tipo_pupunheira" value="<%= fazenda.tipo_pupunheira %>">
+                    <select class="pupunheira" name="tipo_pupunheira">
                         <option value="" selected disabled></option>
-                        <option value="Comum">Pupunha Comum</option>
-                        <option value="Brava">Pupunha Brava</option>
-                        <option value="Sem_Espinho">Pupunha Sem Espinho</option>
-                        <option value="Gigante">Pupunha Gigante</option>
-                        <option value="de_Palmito">Pupunha de Palmito</option>
+                        <option value="Comum" <%= fazendas.tipo_pupunheira == 'Comum' ? 'selected' : '' %>>Pupunha Comum</option>
+                        <option value="Brava" <%= fazendas.tipo_pupunheira == 'Brava' ? 'selected' : '' %>>Pupunha Brava</option>
+                        <option value="Sem_Espinho" <%= fazendas.tipo_pupunheira == 'Sem_Espinho' ? 'selected' : '' %>>Pupunha Sem Espinho</option>
+                        <option value="Gigante" <%= fazendas.tipo_pupunheira == 'Gigante' ? 'selected' : '' %>>Pupunha Gigante</option>
+                        <option value="de_Palmito" <%= fazendas.tipo_pupunheira == 'de_Palmito' ? 'selected' : '' %>>Pupunha de Palmito</option>
                     </select>
                 </div>
-                <input type="hidden" name="id" value="<%= fazenda._id %>">
+                <input type="hidden" name="id" value="<%= fazendas._id %>">
                 <br>
                 <input type="submit" class="bt2" value="Alterar" onclick="return confirm('Confirma as Alterações')">
             </form>
