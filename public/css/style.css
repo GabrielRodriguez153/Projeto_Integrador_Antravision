@@ -377,10 +377,10 @@ body{
 
 .card-img2{
     width: 350px;
-    height: 415px;
+    height: 387px;
     position: relative;
-    top: -1rem;
-    left: -3rem;
+    top: -23.6rem;
+    left: 40.3rem;
 }
 
 .card-img3{
@@ -392,21 +392,21 @@ body{
 }
 
 .sub-container{
-    width: 1380px;
+    width: 1458px;
     height: 375px;
     background-color: #D4FFD0;
-    top: -30rem;
-    left: -3rem;
+    top: 2rem;
+    left: 2rem;
     position: relative;
     border-radius: 16px;
 }
 
 .sub-container2{
-    width: 1380px;
+    width: 1463px;
     height: 760px;
     background-color: #D4FFD0;
-    top: 63rem;
-    left: 4.55rem;
+    top: 58rem;
+    left: 1.8rem;
     position: absolute;
     border-radius: 16px;
 }
@@ -433,7 +433,7 @@ body{
     padding-left: 28px;
     padding-right: 35rem;
     padding-top: 9.6px;
-    font-size: 16.2px;
+    font-size: 17.2px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }

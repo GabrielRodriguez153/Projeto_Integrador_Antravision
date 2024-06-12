@@ -1,12 +1,16 @@
-var mymap = L.map('mapa').setView([-24.5031, -47.8431], 13);
+var mymap = L.map('mapa').setView([-24.487805, -47.847298], 13.5);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         }).addTo(mymap);
 
-        L.marker([-24.4674, -47.8919]).addTo(mymap)
+        L.marker([-24.481580, -47.857401]).addTo(mymap)
             .bindPopup('Sítio A')
             .openPopup();
 
-        L.marker([-24.4244,-47.9402]).addTo(mymap)
+        L.marker([-24.472802, -47.865019]).addTo(mymap)
             .bindPopup('Sítio B')
-            .openPopup();
+            .openPopup(); 
+
+        L.marker([-24.479892, -47.842515]).addTo(mymap)
+        .bindPopup('Sítio C')
+        .openPopup(); 

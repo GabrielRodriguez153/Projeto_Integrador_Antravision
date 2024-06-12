@@ -1,0 +1,66 @@
+.containr {
+    max-width: 600px;
+    margin-left: 2rem;
+    margin-top: 6rem;
+    padding: 26px;
+    height: 370px;
+    border-radius: 10px;
+    background-color:#d4ffd0;
+  }
+
+  .containr2 {
+    max-width: 600px;
+    margin-left: 63rem;
+    margin-top: -47.1rem;
+    padding: 26px;
+    margin-right: 3rem;
+    height: 365px;
+    border-radius: 10px;
+    background-color: #d4ffd0;
+  }
+  
+
+.chart-container {
+    margin-bottom: 40px;
+  }
+  
+  .chart-container h2 {
+    text-align: center;
+  }
+
+  .chart-container canvas {
+    width: 600px;
+    height: 350px; 
+    max-width: 600px;
+    max-height: 350px;
+    background-color: #465741;
+    padding: .5rem;
+    border-radius: 10px;
+  }
+
+  .titp{
+    font-size: 15px;
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    font-weight: 700;
+    color: #465741;
+    text-transform: uppercase;
+  }
+
+  
+  .titp2{
+    font-size: 20px;
+    font-family: "Montserrat",sans-serif;
+    text-align: left;
+    font-weight: 700;
+    color: #465741;
+    text-transform: uppercase;
+  }
+
+  .tot{
+    font-size: 22px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #465741;
+    margin-top: .5rem;
+  }

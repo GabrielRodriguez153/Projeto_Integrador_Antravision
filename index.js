@@ -3,6 +3,15 @@ import express from 'express'
 
 const app = express() 
 
+const data = {
+    intensidade: [100, 200, 400, 250, 300, 350],
+    quantidade: {
+      total: 165,
+      contaminadas: 33,
+      saudaveis: 132
+    }
+};
+
 import mongoose from 'mongoose'
 
 import session from "express-session"
