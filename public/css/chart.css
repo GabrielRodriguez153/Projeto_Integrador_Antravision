@@ -1,6 +1,6 @@
 .containr {
     max-width: 600px;
-    margin-left: 2rem;
+    margin-left: 3.5rem;
     margin-top: 6rem;
     padding: 26px;
     height: 370px;
@@ -10,7 +10,7 @@
 
   .containr2 {
     max-width: 600px;
-    margin-left: 63rem;
+    margin-left: 65rem;
     margin-top: -47.1rem;
     padding: 26px;
     margin-right: 3rem;
@@ -21,7 +21,7 @@
   
 
 .chart-container {
-    margin-bottom: 40px;
+    margin-top: -3px;
   }
   
   .chart-container h2 {
@@ -30,16 +30,16 @@
 
   .chart-container canvas {
     width: 600px;
-    height: 350px; 
+    height: 310px; 
     max-width: 600px;
-    max-height: 350px;
+    max-height: 330px;
     background-color: #465741;
     padding: .5rem;
     border-radius: 10px;
   }
 
   .titp{
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Montserrat",sans-serif;
     text-align: center;
     font-weight: 700;
@@ -58,9 +58,10 @@
   }
 
   .tot{
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Montserrat';
     font-weight: 700;
     color: #465741;
-    margin-top: .5rem;
+    margin-top: -1.45rem;
+    margin-left: 29.3rem;
   }

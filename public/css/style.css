@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 body{
     background-color: #465741;
 }
@@ -41,8 +42,8 @@ body{
 /* CSS DA TELA DE ABERTUTRA */
 .cotainer{
     width: 692px;
-    margin-top: 3.3rem;
-    margin-left: 26rem;
+    margin-top: 7.3rem;
+    margin-left: 32rem;
     height: 528px;
     border-radius: 22px;
     background-color: #D4FFD0;
@@ -108,8 +109,8 @@ body{
     width: 900px;
     height: 550px;
     border-radius: 20px;
-    margin-left: 20rem;
-    margin-top: 2.6rem;
+    margin-left: 25rem;
+    margin-top: 6.6rem;
     background-color: #D4FFD0;
 }
 
@@ -147,8 +148,8 @@ body{
     color: #465741;
     font-family: 'Montserrat',sans-serif;
     position: absolute;
-    top: 7.3rem;
-    left: 49.6rem;
+    top: 11.3rem;
+    left: 54.6rem;
     font-weight: 700;
     font-size: 35px;
 }
@@ -273,8 +274,8 @@ body{
     position: absolute;
     height: 550px;
     border-radius: 20px;
-    left: 13rem;
-    top: 3rem;
+    left: 20rem;
+    top: 6rem;
     background-color: #D4FFD0;
 }
 
@@ -380,7 +381,7 @@ body{
     height: 387px;
     position: relative;
     top: -23.6rem;
-    left: 40.3rem;
+    left: 42.3rem;
 }
 
 .card-img3{
@@ -396,17 +397,17 @@ body{
     height: 375px;
     background-color: #D4FFD0;
     top: 2rem;
-    left: 2rem;
+    left: 7rem;
     position: relative;
     border-radius: 16px;
 }
 
 .sub-container2{
     width: 1463px;
-    height: 760px;
+    height: 740px;
     background-color: #D4FFD0;
     top: 58rem;
-    left: 1.8rem;
+    left: 6.8rem;
     position: absolute;
     border-radius: 16px;
 }
@@ -440,8 +441,8 @@ body{
 
 /* TELA DO MAPA */
 #mapa{
-    height: 480px;
-    width: 1300px;
+    height: 530px;
+    width: 1400px;
     margin-top: 9rem;
     margin-left: 8rem;
     border-radius: .5rem;
@@ -474,8 +475,8 @@ body{
 .imgd{
     width: 652px;
     position: absolute;
-    left: 53.2rem;
-    top: 7.2rem;
+    left: 58.2rem;
+    top: 9rem;
 }
 
 .im{
@@ -487,7 +488,8 @@ body{
     background-color: #D4FFD0;
     width: 1475px;
     height: 275px;
-    left: 1.5rem;
+    left: 6.5rem;
+    top: 49rem;
     position: absolute;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -691,10 +693,10 @@ input[type="number"]::-webkit-outer-spin-button {
 /* TELA DE PERFIL */
 .cor{
     background-color: #D4FFD0;
-    width: 1300px;
+    width: 1124px;
     height: 555px;
-    margin-top: 6rem;
-    margin-left: 7rem;
+    margin-top: 9rem;
+    margin-left: 17rem;
     border-radius: 20px;
 }
 
@@ -918,3 +920,5 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: #ededed;
     border-radius: 5px;
   }
+
+  
