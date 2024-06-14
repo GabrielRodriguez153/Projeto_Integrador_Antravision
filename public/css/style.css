@@ -471,6 +471,18 @@ body{
     font-family: 'Montserrat',sans-serif;
 }
 
+.frm2{
+    background-color: #D4FFD0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 828px;
+    height: 575px;
+    position: relative;
+    left: -6rem;
+    top: -1.9rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
 .imgd{
     width: 652px;
     position: absolute;

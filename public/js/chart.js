@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const data = {
       intensidade: [100, 250, 400, 250, 300, 350],
       quantidade: {
-        total: 166,
-        contaminadas: 33,
-        saudaveis: 133
+        total: 16,
+        contaminadas: 3,
+        saudaveis: 13
       }
     };
 

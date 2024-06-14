@@ -11,6 +11,6 @@ var mymap = L.map('mapa').setView([-24.487805, -47.847298], 13.5);
             .bindPopup('Sítio B')
             .openPopup(); 
 
-        L.marker([-24.479892, -47.842515]).addTo(mymap)
+        L.marker([-24.490249, -47.854152]).addTo(mymap)
         .bindPopup('Sítio C')
         .openPopup(); 
