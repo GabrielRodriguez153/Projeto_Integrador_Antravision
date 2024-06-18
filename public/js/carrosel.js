@@ -1,4 +1,5 @@
 let currentIndex = 0;
+let currentRotation = 0;
 
 function showSlide(index) {
     const slides = document.querySelector('.carousel-container');
@@ -23,6 +24,13 @@ function nextSlide() {
 function prevSlide() {
     showSlide(currentIndex - 1);
 }
+
+document.getElementById('rotateBtn').addEventListener('click', ()=>{
+    const slides = document.querySelector('.carousel-slide');
+            const img = slides.children[currentIndex];
+            currentRotation = (currentRotation + 90) % 360;
+            img.style.transform = `rotate(${currentRotation}deg)`;
+})
 
 window.onload = () => {
     showSlide(currentIndex);

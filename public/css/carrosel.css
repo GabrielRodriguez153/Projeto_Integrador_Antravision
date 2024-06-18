@@ -50,3 +50,17 @@
 .carousel-button:focus {
     outline: none;
 }
+
+#rotateBtn {
+    position: absolute;
+    top: 84%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 1000;
+    left: 72rem;
+}

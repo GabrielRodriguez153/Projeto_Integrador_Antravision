@@ -8,7 +8,6 @@ router.get("/mapa",(req,res) =>{
 
 router.get("/perfil", async (req,res) => {
     const perfil = await OtherService.perfil(req.session.user.id)
-    console.log(perfil)
     res.render("perfil", {
         perfil: perfil
     })
