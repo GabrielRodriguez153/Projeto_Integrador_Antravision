@@ -30,6 +30,7 @@ import OtheController from './controllers/OtherController.js'
 app.use(session({
     secret: "pi",
     // Sessão expira em n segundos (3600000 = 1 hora / 30000 = 30 segundos)
+    cookie: {maxAge: 3600000},
     saveUninitialized : false,
     resave: false
 }))
